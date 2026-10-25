@@ -5,231 +5,254 @@
   "files": [
     {
       "file": "engine/api_cli.py",
-      "sha256": "c64607b8b8e1aa1d6fff41ce905ce6f6b6f773c1535830ce662f8ce79ce3486a",
+      "sha256": "57e9415b6d698be3cd4c1247f44814b11c6860015d4a6378f198966f2604d7a6",
       "original_sha256": "57e9415b6d698be3cd4c1247f44814b11c6860015d4a6378f198966f2604d7a6",
       "transformations": [
         "Project labels anonymized where present",
-        "Internal scripts/ references rebased to engine/ where present"
+        "Internal scripts/ references rebased to engine/ where present",
+        "Text line endings normalized to LF"
       ],
       "classification": "implementation_source_no_project_data"
     },
     {
       "file": "engine/api_clients.py",
-      "sha256": "741dd1eb176ac3bad7c86b9014cd0d7e46acf260a27f708562eafc352075da55",
+      "sha256": "81718a584eab0505a33fa3c2e958d2321defff03cec7e45766e21ccc7b634e0a",
       "original_sha256": "81718a584eab0505a33fa3c2e958d2321defff03cec7e45766e21ccc7b634e0a",
       "transformations": [
         "Project labels anonymized where present",
-        "Internal scripts/ references rebased to engine/ where present"
+        "Internal scripts/ references rebased to engine/ where present",
+        "Text line endings normalized to LF"
       ],
       "classification": "implementation_source_no_project_data"
     },
     {
       "file": "engine/api_credentials.py",
-      "sha256": "596f71af6f1be1af9fb0a52561bd5f41e120b7430e0b229eb7ae9ad61090f08e",
+      "sha256": "f1336c53b048979052746fb433a909c95759fd991d7c212349b039336f1e508c",
       "original_sha256": "f1336c53b048979052746fb433a909c95759fd991d7c212349b039336f1e508c",
       "transformations": [
         "Project labels anonymized where present",
-        "Internal scripts/ references rebased to engine/ where present"
+        "Internal scripts/ references rebased to engine/ where present",
+        "Text line endings normalized to LF"
       ],
       "classification": "implementation_source_no_project_data"
     },
     {
       "file": "engine/assembly_cli.py",
-      "sha256": "65b3a0c416d86636b03070495f11c4f85c9cf6ff32e29c7f5fa8f06300b5ecb2",
+      "sha256": "057180a1f67dc7c68cfbd0a282186c029b93d9b4d4bd6f95021adcb1158a5213",
       "original_sha256": "b0350f4348bb010443a0d0ce970ef744c0d16633109b954e2a40c39ffc62d8ac",
       "transformations": [
         "Project labels anonymized where present",
-        "Internal scripts/ references rebased to engine/ where present"
+        "Internal scripts/ references rebased to engine/ where present",
+        "Text line endings normalized to LF"
       ],
       "classification": "implementation_source_no_project_data"
     },
     {
       "file": "engine/assembly_engine.py",
-      "sha256": "851b3d741d02ba05c022509799b47b9c357ecab32980262671bdbd6674561fd4",
+      "sha256": "046a161cb0951f1ad797b4ff9ffdc642df2174f43cc54c49daf3998cba13e7b4",
       "original_sha256": "e4047fa72fa9a1ae2e44ec5ecd3b3e8456e6c6bc61a147a4f6fb13a05275498b",
       "transformations": [
         "Project labels anonymized where present",
-        "Internal scripts/ references rebased to engine/ where present"
+        "Internal scripts/ references rebased to engine/ where present",
+        "Text line endings normalized to LF"
       ],
       "classification": "implementation_source_no_project_data"
     },
     {
       "file": "engine/codex_cli.py",
-      "sha256": "0a66233af8f5489b4abcb4be53f16e93382daeb001b40688433514cb33bb2f44",
+      "sha256": "0db06ec370172d83cab66c72d8577ffef97d2ed513f2ed4eba165e0a03662ffb",
       "original_sha256": "f6329114baf9e27bfc2a4c2d6105e7844315b428a7527402b34c04c7b956b360",
       "transformations": [
         "Project labels anonymized where present",
-        "Internal scripts/ references rebased to engine/ where present"
+        "Internal scripts/ references rebased to engine/ where present",
+        "Text line endings normalized to LF"
       ],
       "classification": "implementation_source_no_project_data"
     },
     {
       "file": "engine/cost_engine.py",
-      "sha256": "b2e0ab06b8a50f8c7a3abcbb0a2a09bc88c388b61765ddee760c2d98d3952ec1",
+      "sha256": "74f3140901672e81461e3e1fe2dd8fa6bc1229ea260ecb130901f1d44234b75e",
       "original_sha256": "74f3140901672e81461e3e1fe2dd8fa6bc1229ea260ecb130901f1d44234b75e",
       "transformations": [
         "Project labels anonymized where present",
-        "Internal scripts/ references rebased to engine/ where present"
+        "Internal scripts/ references rebased to engine/ where present",
+        "Text line endings normalized to LF"
       ],
       "classification": "implementation_source_no_project_data"
     },
     {
       "file": "engine/drawing_extract.py",
-      "sha256": "9ff2750642a2d7f7beb5716f488a46119941cde4a696fec9aabf3bb1d37f0eef",
+      "sha256": "77f800e04ec8d9e5f9a3313807ea7e49f0d3cf6e366dc6cd0a05c57a93ce2866",
       "original_sha256": "77f800e04ec8d9e5f9a3313807ea7e49f0d3cf6e366dc6cd0a05c57a93ce2866",
       "transformations": [
         "Project labels anonymized where present",
-        "Internal scripts/ references rebased to engine/ where present"
+        "Internal scripts/ references rebased to engine/ where present",
+        "Text line endings normalized to LF"
       ],
       "classification": "implementation_source_no_project_data"
     },
     {
       "file": "engine/export_comparison.mjs",
-      "sha256": "1474b0eb4dca56531dcfa6d5cd53a06b6ac9c0af4277d13b3628d8a46d060c9d",
+      "sha256": "b3d1699c890437c302b374e23480d2caf5899cc28059b16b274456da719e24cb",
       "original_sha256": "b3d1699c890437c302b374e23480d2caf5899cc28059b16b274456da719e24cb",
       "transformations": [
         "Project labels anonymized where present",
-        "Internal scripts/ references rebased to engine/ where present"
+        "Internal scripts/ references rebased to engine/ where present",
+        "Text line endings normalized to LF"
       ],
       "classification": "implementation_source_no_project_data"
     },
     {
       "file": "engine/export_workbook.mjs",
-      "sha256": "3971789d5a2ad3d8afbd527584aa890c0a076a2d0c252f23d2685322ad5aa8db",
+      "sha256": "50db23c92f0eef1c8321581925df260e2446be149745b7a694291f51d20342ab",
       "original_sha256": "50db23c92f0eef1c8321581925df260e2446be149745b7a694291f51d20342ab",
       "transformations": [
         "Project labels anonymized where present",
-        "Internal scripts/ references rebased to engine/ where present"
+        "Internal scripts/ references rebased to engine/ where present",
+        "Text line endings normalized to LF"
       ],
       "classification": "implementation_source_no_project_data"
     },
     {
       "file": "engine/external_pricing.py",
-      "sha256": "4c03d04ad96c92da67e9ff94cbb2665e6b864a68068003508bb5331417886e44",
+      "sha256": "d638dcdfe4d42f3d192682569b3f506e252139dd50cbb7731c7e11afdf7239e9",
       "original_sha256": "d638dcdfe4d42f3d192682569b3f506e252139dd50cbb7731c7e11afdf7239e9",
       "transformations": [
         "Project labels anonymized where present",
-        "Internal scripts/ references rebased to engine/ where present"
+        "Internal scripts/ references rebased to engine/ where present",
+        "Text line endings normalized to LF"
       ],
       "classification": "implementation_source_no_project_data"
     },
     {
       "file": "engine/external_store.py",
-      "sha256": "41fc830c25b29500a996a57879b8f886b1ad874abb9c9625900ceb7040391c6c",
+      "sha256": "a89a2196e36a4de5bd07027e63e8428b6248d72eea134073b2d465a54a70b947",
       "original_sha256": "a89a2196e36a4de5bd07027e63e8428b6248d72eea134073b2d465a54a70b947",
       "transformations": [
         "Project labels anonymized where present",
-        "Internal scripts/ references rebased to engine/ where present"
+        "Internal scripts/ references rebased to engine/ where present",
+        "Text line endings normalized to LF"
       ],
       "classification": "implementation_source_no_project_data"
     },
     {
       "file": "engine/historical_cases.py",
-      "sha256": "6c166b2cafd34a46c6a481171ee88d731cb91114c6da77ff7cc168766d98e509",
+      "sha256": "e705ef67d928e98308eb7db01afe10fc84d49baa6b8cdc31655f6311893a0d6e",
       "original_sha256": "e705ef67d928e98308eb7db01afe10fc84d49baa6b8cdc31655f6311893a0d6e",
       "transformations": [
         "Project labels anonymized where present",
-        "Internal scripts/ references rebased to engine/ where present"
+        "Internal scripts/ references rebased to engine/ where present",
+        "Text line endings normalized to LF"
       ],
       "classification": "implementation_source_no_project_data"
     },
     {
       "file": "engine/legacy_cell_edit.py",
-      "sha256": "1f3a90c44abab3f1e45b104808933461176d428f6e4a14fb878dab409d7a749e",
+      "sha256": "bbb2f8b798cb818076e852f33e715ba3441eb87a238c5b47d4d19140d84b94b0",
       "original_sha256": "bbb2f8b798cb818076e852f33e715ba3441eb87a238c5b47d4d19140d84b94b0",
       "transformations": [
         "Project labels anonymized where present",
-        "Internal scripts/ references rebased to engine/ where present"
+        "Internal scripts/ references rebased to engine/ where present",
+        "Text line endings normalized to LF"
       ],
       "classification": "implementation_source_no_project_data"
     },
     {
       "file": "engine/native_excel_validation.py",
-      "sha256": "bfae4b41344c94010b55f922e12a77042e3ad0c0a8a735ab0cf13d743e407b4a",
+      "sha256": "1c060334b58eb547684c2b73a7a31ad2b4d869a69d46b12dccf4132a057193c1",
       "original_sha256": "1c060334b58eb547684c2b73a7a31ad2b4d869a69d46b12dccf4132a057193c1",
       "transformations": [
         "Project labels anonymized where present",
-        "Internal scripts/ references rebased to engine/ where present"
+        "Internal scripts/ references rebased to engine/ where present",
+        "Text line endings normalized to LF"
       ],
       "classification": "implementation_source_no_project_data"
     },
     {
       "file": "engine/pricing_policy.py",
-      "sha256": "48a8736aa40ff4a3724d90dfacb005271d7c0758a8ccf7716a5f7c2e8bf4d5c6",
+      "sha256": "e6cd24bf7eec95b9b1e75ba0d1908853d53ac03c9b253cbd3ee66a7b402f5943",
       "original_sha256": "e6cd24bf7eec95b9b1e75ba0d1908853d53ac03c9b253cbd3ee66a7b402f5943",
       "transformations": [
         "Project labels anonymized where present",
-        "Internal scripts/ references rebased to engine/ where present"
+        "Internal scripts/ references rebased to engine/ where present",
+        "Text line endings normalized to LF"
       ],
       "classification": "implementation_source_no_project_data"
     },
     {
       "file": "engine/quantity_engine.py",
-      "sha256": "37173ed926dbf17bda0d22b206712e1071a271389cdbab30e1d8055b4c5f2315",
+      "sha256": "0f560c09ad883fca9ad970b3b14cea813a85ba46d5c4e044568d5dfd5a0abe99",
       "original_sha256": "0f560c09ad883fca9ad970b3b14cea813a85ba46d5c4e044568d5dfd5a0abe99",
       "transformations": [
         "Project labels anonymized where present",
-        "Internal scripts/ references rebased to engine/ where present"
+        "Internal scripts/ references rebased to engine/ where present",
+        "Text line endings normalized to LF"
       ],
       "classification": "implementation_source_no_project_data"
     },
     {
       "file": "engine/source_workbook_edit.py",
-      "sha256": "33a06b31b9f007a5384972dacfed5402eac221c01ba192800d17d684e2d0ded1",
+      "sha256": "c173d4e4c58a05259d2ce24a2849dcc2765b1201bf8a36f207cdf2d8d413a00b",
       "original_sha256": "2ce76d1087ef842e47cf8aa2070360bc1b7f177a21b791cb1a596c7b1ea7016e",
       "transformations": [
         "Project labels anonymized where present",
-        "Internal scripts/ references rebased to engine/ where present"
+        "Internal scripts/ references rebased to engine/ where present",
+        "Text line endings normalized to LF"
       ],
       "classification": "implementation_source_no_project_data"
     },
     {
       "file": "engine/verify_native_excel.ps1",
-      "sha256": "535566701b4e13b486826f56279ebcb91739304f172bdbb328f18d5dd9e6bcef",
+      "sha256": "a40a43e38f52cb808b3616072698697f97e1c29845bf664c1f4524f781255450",
       "original_sha256": "268e2646039e899128bbe7a4d65c3cb97608209ffb1750236f4ad1b810d6e72f",
       "transformations": [
         "Project labels anonymized where present",
-        "Internal scripts/ references rebased to engine/ where present"
+        "Internal scripts/ references rebased to engine/ where present",
+        "Text line endings normalized to LF"
       ],
       "classification": "implementation_source_no_project_data"
     },
     {
       "file": "engine/working_catalog.py",
-      "sha256": "be67de2c4fc5856991deb0a10ac84af7aafeeba304a673a2be37a6258266054d",
+      "sha256": "988d6fd395535561eb2ae92943bedef15fc2101a86cdcee0466f0b31d00061f3",
       "original_sha256": "988d6fd395535561eb2ae92943bedef15fc2101a86cdcee0466f0b31d00061f3",
       "transformations": [
         "Project labels anonymized where present",
-        "Internal scripts/ references rebased to engine/ where present"
+        "Internal scripts/ references rebased to engine/ where present",
+        "Text line endings normalized to LF"
       ],
       "classification": "implementation_source_no_project_data"
     },
     {
       "file": "engine/lib/aggregate_linear.py",
-      "sha256": "731972079c77678a27b0749d67e860d7977b60234e8e08fdc8468239a9244b52",
+      "sha256": "f6bd8f7e38854f80413c0f9d2390d9fcdc2a22591e7d09d57a419a86652eb088",
       "original_sha256": "f6bd8f7e38854f80413c0f9d2390d9fcdc2a22591e7d09d57a419a86652eb088",
       "transformations": [
         "Project labels anonymized where present",
-        "Internal scripts/ references rebased to engine/ where present"
+        "Internal scripts/ references rebased to engine/ where present",
+        "Text line endings normalized to LF"
       ],
       "classification": "implementation_source_no_project_data"
     },
     {
       "file": "engine/lib/reference_ast.py",
-      "sha256": "3138af065c1465223759e3f6fb4f5a952fe8e888b09771a2794dcca8923cab0b",
+      "sha256": "4eba04850d16bc5875eaf2aeb706cf7ac6510166b9b11f959cf1f04aa75bd736",
       "original_sha256": "4eba04850d16bc5875eaf2aeb706cf7ac6510166b9b11f959cf1f04aa75bd736",
       "transformations": [
         "Project labels anonymized where present",
-        "Internal scripts/ references rebased to engine/ where present"
+        "Internal scripts/ references rebased to engine/ where present",
+        "Text line endings normalized to LF"
       ],
       "classification": "implementation_source_no_project_data"
     },
     {
       "file": "engine/lib/source_membership.py",
-      "sha256": "cc4a31603d9d3b9ab7999f53bf4d80a79e0994c1f7fb1a4f5ca90e19d5b0b6bb",
+      "sha256": "92af849c73527dece738f155df3a3663f7ff6e95386b3a40cf7709af145e63bf",
       "original_sha256": "92af849c73527dece738f155df3a3663f7ff6e95386b3a40cf7709af145e63bf",
       "transformations": [
         "Project labels anonymized where present",
-        "Internal scripts/ references rebased to engine/ where present"
+        "Internal scripts/ references rebased to engine/ where present",
+        "Text line endings normalized to LF"
       ],
       "classification": "implementation_source_no_project_data"
     }
