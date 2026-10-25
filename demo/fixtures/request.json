@@ -1,0 +1,19 @@
+{
+  "classification": "SYNTHETIC",
+  "purpose": "DEMO_ONLY",
+  "work": "DEMO 12 mm plywood installation",
+  "pricing_date": "2026-10-25",
+  "quantity": "1",
+  "unit": "m2",
+  "scope": "DEMO direct installation cost; VAT, overhead, profit and delivery excluded",
+  "assumptions": {
+    "classification": "SYNTHETIC",
+    "notice": "Invented educational coefficients; not approved construction estimating standards.",
+    "material_loss_rate": "0.03",
+    "fixings_rate": "0.03",
+    "carpenter_person_days": "2",
+    "helper_person_days": "1",
+    "daily_productivity_m2": "40",
+    "expense_rate_on_labor": "0.02"
+  }
+}

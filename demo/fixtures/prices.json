@@ -1,0 +1,52 @@
+{
+  "classification": "SYNTHETIC",
+  "purpose": "DEMO_ONLY",
+  "notice": "Invented educational records. Not an official quotation, API response, wage publication, or project price.",
+  "records": [
+    {
+      "id": "DEMO-PLYWOOD-12",
+      "resource": "plywood_12mm",
+      "specification": "DEMO water-resistant plywood 12 mm",
+      "price": "12000",
+      "unit": "m2",
+      "source_id": "SYNTHETIC-MATERIAL-001",
+      "classification": "SYNTHETIC",
+      "purpose": "DEMO_ONLY",
+      "effective_start": "2026-01-01",
+      "effective_end": "2026-12-31",
+      "tax_basis": "EXCLUDED",
+      "scope": "MATERIAL_SUPPLY_ONLY",
+      "delivery": "EXCLUDED"
+    },
+    {
+      "id": "DEMO-CARPENTER",
+      "resource": "carpenter",
+      "specification": "DEMO carpenter daily wage",
+      "price": "280000",
+      "unit": "person_day",
+      "source_id": "SYNTHETIC-LABOR-001",
+      "classification": "SYNTHETIC",
+      "purpose": "DEMO_ONLY",
+      "effective_start": "2026-01-01",
+      "effective_end": "2026-12-31",
+      "tax_basis": "EXCLUDED",
+      "scope": "LABOR_ONLY",
+      "delivery": "NOT_APPLICABLE"
+    },
+    {
+      "id": "DEMO-HELPER",
+      "resource": "helper",
+      "specification": "DEMO helper daily wage",
+      "price": "170000",
+      "unit": "person_day",
+      "source_id": "SYNTHETIC-LABOR-002",
+      "classification": "SYNTHETIC",
+      "purpose": "DEMO_ONLY",
+      "effective_start": "2026-01-01",
+      "effective_end": "2026-12-31",
+      "tax_basis": "EXCLUDED",
+      "scope": "LABOR_ONLY",
+      "delivery": "NOT_APPLICABLE"
+    }
+  ]
+}

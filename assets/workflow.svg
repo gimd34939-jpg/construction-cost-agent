@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">Construction Cost Agent workflow</title>
+  <desc id="desc">Request, source verification, deterministic costing, workbook copy, and verification evidence. Unresolved inputs remain incomplete.</desc>
+  <defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101d32"/><stop offset="1" stop-color="#24384a"/></linearGradient><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 8 4 0 8" fill="none" stroke="#8ba5bf" stroke-width="1.6"/></marker></defs>
+  <rect width="1200" height="360" rx="18" fill="url(#bg)"/>
+  <g font-family="Arial, sans-serif">
+    <text x="42" y="52" fill="#8ac4e9" font-size="13" letter-spacing="3">CONSTRUCTION COST AGENT</text>
+    <text x="42" y="95" fill="#fff" font-size="29" font-weight="700">From a work request to a traceable estimate.</text>
+    <text x="42" y="127" fill="#c2d0df" font-size="16">Source-aware pricing. Explicit units. Deterministic arithmetic. Preserved originals.</text>
+    <g stroke="#8ba5bf" stroke-width="1.5" marker-end="url(#arrow)"><path d="M240 218H265"/><path d="M464 218H489"/><path d="M688 218H713"/><path d="M912 218H937"/></g>
+    <g fill="#20374d" stroke="#4a647a"><rect x="42" y="177" width="198" height="84" rx="10"/><rect x="266" y="177" width="198" height="84" rx="10"/><rect x="490" y="177" width="198" height="84" rx="10"/><rect x="714" y="177" width="198" height="84" rx="10"/><rect x="938" y="177" width="220" height="84" rx="10"/></g>
+    <g fill="#fff" font-size="18" font-weight="700"><text x="62" y="210">01  Request</text><text x="286" y="210">02  Sources</text><text x="510" y="210">03  Costing</text><text x="734" y="210">04  Copy</text><text x="958" y="210">05  Evidence</text></g>
+    <g fill="#b9cbdc" font-size="13"><text x="62" y="240">Scope / version / period</text><text x="286" y="240">DB / API / source lineage</text><text x="510" y="240">Decimal / units / rounding</text><text x="734" y="240">OOXML / linked totals</text><text x="958" y="240">Checks / hashes / Excel</text></g>
+    <rect x="42" y="291" width="1116" height="35" rx="7" fill="#14283a"/>
+    <text x="61" y="314" fill="#f4c87c" font-size="14">Missing or conflicting evidence remains INCOMPLETE — a known subtotal is not a finished contract amount.</text>
+  </g>
+</svg>

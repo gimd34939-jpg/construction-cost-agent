@@ -1,0 +1,27 @@
+{
+  "status": "PASS_PUBLIC_PORTFOLIO_SCOPE",
+  "checked_on": "2026-10-25",
+  "python_version": "3.12.14",
+  "synthetic_demo_tests": {
+    "run": 25,
+    "passed": 25,
+    "failed": 0
+  },
+  "source_python_syntax_files": 25,
+  "public_content_scan": {
+    "findings": 0,
+    "relative_link_errors": 0,
+    "excluded": [
+      "real databases",
+      "customer workbooks",
+      "source PDFs and CAD drawings",
+      "API raw responses",
+      "credentials",
+      "personal absolute paths"
+    ]
+  },
+  "original_local_sources_unchanged": true,
+  "native_excel_rerun_for_portfolio": false,
+  "live_api_price_refresh_for_portfolio": false,
+  "scope": "Public synthetic demo tests and source-only portfolio packaging. Historical private-engine validation remains separately documented."
+}
