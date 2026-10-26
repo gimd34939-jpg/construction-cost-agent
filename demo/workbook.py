@@ -15,7 +15,7 @@ import tempfile
 import xml.etree.ElementTree as ET
 from zipfile import ZipFile, ZIP_DEFLATED
 
-from .costing import decimal, trunc
+from .costing import InputError, calculate, decimal, trunc
 
 NS = "http://schemas.openxmlformats.org/spreadsheetml/2006/main"
 REL = "http://schemas.openxmlformats.org/officeDocument/2006/relationships"
@@ -88,11 +88,17 @@ def create_fixture(path, request, catalog):
     path = Path(path)
     if path.exists():
         raise WorkbookError("Refusing to overwrite an existing fixture")
+    # Fixture generation must obey the same source, unit, date and scope gates
+    # as costing, otherwise rejected prices could still become a complete XLSX.
+    try:
+        result = calculate(request, catalog)
+    except InputError as error:
+        raise WorkbookError(str(error)) from error
+    if result["status"] != "COMPLETE":
+        raise WorkbookError("Incomplete prices cannot create a complete fixture")
     # Formula coefficients are fixed to this demo's documented contract.
     expected = {"material_loss_rate": "0.03", "fixings_rate": "0.03", "carpenter_person_days": "2",
                 "helper_person_days": "1", "daily_productivity_m2": "40", "expense_rate_on_labor": "0.02"}
-    if request.get("classification") != "SYNTHETIC" or request.get("purpose") != "DEMO_ONLY":
-        raise WorkbookError("Synthetic demo fixture required")
     if any(decimal(request["assumptions"].get(key)) != Decimal(value) for key, value in expected.items()):
         raise WorkbookError("Workbook fixture supports its fixed synthetic coefficients only")
     cells = _fixture_cells(request, catalog)

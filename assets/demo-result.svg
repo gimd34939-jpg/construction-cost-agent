@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="510" viewBox="0 0 1200 510" role="img" aria-labelledby="title desc">
+  <title id="title">공개 합성 데모 실행 결과</title>
+  <desc id="desc">합성 공급가격 변경 전 31345원, 변경 후 32406원. 가격 누락 시 전체 금액 null. 연결 셀 9개 검사. 실제 Excel 화면이 아닌 실행 JSON의 요약이다.</desc>
+  <rect width="1200" height="510" rx="18" fill="#102436"/>
+  <g font-family="Malgun Gothic, Apple SD Gothic Neo, sans-serif">
+    <text x="42" y="47" fill="#71d6c2" font-size="16">SYNTHETIC / DEMO_ONLY · 1㎡</text>
+    <text x="42" y="94" fill="#ffffff" font-size="30" font-weight="700">가격 변경과 누락이 결과에 반영되는지 확인합니다</text>
+    <text x="42" y="126" fill="#b8cddd" font-size="16">공개 코드 실행 JSON에서 생성한 요약 · 현장 견적·현재 공표가격·Excel 화면이 아닙니다</text>
+    <g fill="#1c384c" stroke="#3e6177">
+      <rect x="42" y="164" width="352" height="170" rx="12"/>
+      <rect x="424" y="164" width="352" height="170" rx="12"/>
+      <rect x="806" y="164" width="352" height="170" rx="12"/>
+    </g>
+    <g fill="#b8cddd" font-size="17">
+      <text x="65" y="197">① 공급가격 12,000원</text>
+      <text x="447" y="197">② 공급가격 13,000원</text>
+      <text x="829" y="197">③ 합판 가격 누락</text>
+    </g>
+    <g fill="#ffffff" font-size="35" font-weight="700">
+      <text x="65" y="254">31,345원</text>
+      <text x="447" y="254">32,406원</text>
+      <text x="829" y="254">null</text>
+    </g>
+    <g font-size="16">
+      <text x="65" y="304" fill="#71d6c2">COMPLETE · 합성 직접비</text>
+      <text x="447" y="304" fill="#71d6c2">COMPLETE · 수식 연결 확인</text>
+      <text x="829" y="304" fill="#ffd493">INCOMPLETE · 부분합 별도</text>
+    </g>
+    <rect x="42" y="361" width="1116" height="99" rx="10" fill="#183043"/>
+    <text x="65" y="399" fill="#ffffff" font-size="19">원본 SHA256 보존 · 연결값 9셀 독립 대조 · 공개 테스트 35개 통과</text>
+    <text x="65" y="434" fill="#b8cddd" font-size="16">재현: python tools/verify_public.py --output demo-output</text>
+    <text x="42" y="490" fill="#9cb4c7" font-size="14">실제 API 조회와 Microsoft Excel 재계산은 이번 공개 검증 범위에 포함하지 않습니다.</text>
+  </g>
+</svg>

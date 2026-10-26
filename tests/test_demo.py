@@ -114,6 +114,16 @@ class CostingTests(unittest.TestCase):
         with self.assertRaises(InputError):
             self.result()
 
+    def test_other_work_cannot_relabel_the_supported_recipe(self):
+        self.request["work"] = "DEMO 9 mm plasterboard installation"
+        with self.assertRaisesRegex(InputError, "work item"):
+            self.result()
+
+    def test_wider_scope_cannot_relabel_the_direct_cost_result(self):
+        self.request["scope"] = "VAT, overhead, profit and delivery INCLUDED"
+        with self.assertRaisesRegex(InputError, "direct-cost scope"):
+            self.result()
+
 
 class WorkbookTests(unittest.TestCase):
     def setUp(self):
@@ -124,6 +134,24 @@ class WorkbookTests(unittest.TestCase):
         self.source = self.folder / "original.xlsx"
         self.output = self.folder / "revision.xlsx"
         self.original_hash = create_fixture(self.source, self.request, self.catalog)
+
+    def test_fixture_creation_obeys_source_and_price_gates_before_writing(self):
+        invalid_catalogs = []
+        for key, value in (("classification", "OFFICIAL"), ("purpose", "PRODUCTION")):
+            catalog = deepcopy(self.catalog)
+            catalog[key] = value
+            invalid_catalogs.append((key, catalog))
+        for key, value in (("unit", "sheet"), ("source_id", ""),
+                           ("effective_end", "2025-12-31"), ("price", "-1")):
+            catalog = deepcopy(self.catalog)
+            catalog["records"][0][key] = value
+            invalid_catalogs.append((key, catalog))
+        for label, catalog in invalid_catalogs:
+            with self.subTest(label=label):
+                destination = self.folder / f"invalid-{label}.xlsx"
+                with self.assertRaises(WorkbookError):
+                    create_fixture(destination, self.request, catalog)
+                self.assertFalse(destination.exists())
 
     def test_price_change_reaches_estimate_and_summary_and_preserves_original(self):
         catalog = deepcopy(self.catalog)
