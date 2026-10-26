@@ -46,6 +46,11 @@ TARGETS = {
     "helper": ("person_day", "LABOR_ONLY", "DEMO helper daily wage", "NOT_APPLICABLE"),
 }
 
+# This reduced demo has one recipe. Do not relabel its result as a different
+# work item or a wider cost scope merely by changing request display strings.
+SUPPORTED_WORK = "DEMO 12 mm plywood installation"
+SUPPORTED_SCOPE = "DEMO direct installation cost; VAT, overhead, profit and delivery excluded"
+
 
 def _resolve(resource, records, applied):
     candidates = [record for record in records if record.get("resource") == resource]
@@ -86,6 +91,10 @@ def calculate(request, catalog):
         raise InputError("Only SYNTHETIC/DEMO_ONLY requests and catalogs are supported")
     if request.get("unit") != "m2":
         raise InputError("The reduced demo supports m2 only")
+    if request.get("work") != SUPPORTED_WORK:
+        raise InputError("The reduced demo supports its 12 mm plywood work item only")
+    if request.get("scope") != SUPPORTED_SCOPE:
+        raise InputError("The reduced demo supports its explicit direct-cost scope only")
     try:
         applied = date.fromisoformat(request["pricing_date"])
     except (KeyError, TypeError, ValueError) as error:

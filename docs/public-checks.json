@@ -1,27 +1,137 @@
 {
-  "status": "PASS_PUBLIC_PORTFOLIO_SCOPE",
-  "checked_on": "2026-10-25",
+  "status": "PASS_REPRODUCIBLE_PUBLIC_CHECKS",
+  "checked_on": "2026-10-26",
   "python_version": "3.12.14",
-  "synthetic_demo_tests": {
-    "run": 25,
-    "passed": 25,
-    "failed": 0
+  "platform": "Windows",
+  "command": "python tools/verify_public.py --output NEW_DIRECTORY",
+  "tests": {
+    "run": 35,
+    "passed": 35,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 0
   },
-  "source_python_syntax_files": 25,
-  "public_content_scan": {
-    "findings": 0,
-    "relative_link_errors": 0,
-    "excluded": [
-      "real databases",
-      "customer workbooks",
-      "source PDFs and CAD drawings",
-      "API raw responses",
-      "credentials",
-      "personal absolute paths"
-    ]
+  "python_syntax": {
+    "checked": 27,
+    "errors": []
   },
-  "original_local_sources_unchanged": true,
-  "native_excel_rerun_for_portfolio": false,
-  "live_api_price_refresh_for_portfolio": false,
-  "scope": "Public synthetic demo tests and source-only portfolio packaging. Historical private-engine validation remains separately documented."
+  "relative_links": {
+    "checked": 104,
+    "errors": [],
+    "scope": "Inline relative Markdown link/image targets exist; anchors and remote URLs are not checked."
+  },
+  "engine_source_manifest": {
+    "checked": 23,
+    "mismatches": [],
+    "scope": "Published engine files against the export manifest; private originals are not rechecked."
+  },
+  "demo": {
+    "classification": "SYNTHETIC",
+    "purpose": "DEMO_ONLY",
+    "baseline_total": "31345",
+    "repriced_total": "32406",
+    "missing_price_status": "INCOMPLETE",
+    "missing_price_total": null,
+    "linked_cells_checked": 9,
+    "workbook_verification": {
+      "status": "PASS_SELECTED_SYNTHETIC_SCOPE",
+      "classification": "SYNTHETIC",
+      "purpose": "DEMO_ONLY",
+      "source_sha256_before": "283b46a426b9ef0e67bfac2a73e286dc3341f105ea24d348448d77f60b720750",
+      "source_sha256_after": "283b46a426b9ef0e67bfac2a73e286dc3341f105ea24d348448d77f60b720750",
+      "source_unchanged": true,
+      "output_sha256": "6f4f4938304fd4e251bbcd85eae2d7ea90384d679f66c966f6e5592c5332ec44",
+      "formulas_preserved": true,
+      "changed_ooxml_parts": [
+        "xl/worksheets/sheet1.xml",
+        "xl/worksheets/sheet2.xml",
+        "xl/worksheets/sheet3.xml"
+      ],
+      "untouched_parts_preserved_byte_for_byte": true,
+      "check_count": 9,
+      "checks": [
+        {
+          "sheet": "Estimate",
+          "cell": "E2",
+          "actual": "13791",
+          "expected": "13791",
+          "passed": true
+        },
+        {
+          "sheet": "Estimate",
+          "cell": "G2",
+          "actual": "18250",
+          "expected": "18250",
+          "passed": true
+        },
+        {
+          "sheet": "Estimate",
+          "cell": "I2",
+          "actual": "365",
+          "expected": "365",
+          "passed": true
+        },
+        {
+          "sheet": "Estimate",
+          "cell": "K2",
+          "actual": "32406",
+          "expected": "32406",
+          "passed": true
+        },
+        {
+          "sheet": "Estimate",
+          "cell": "L2",
+          "actual": "32406",
+          "expected": "32406",
+          "passed": true
+        },
+        {
+          "sheet": "Summary",
+          "cell": "B2",
+          "actual": "13791",
+          "expected": "13791",
+          "passed": true
+        },
+        {
+          "sheet": "Summary",
+          "cell": "B3",
+          "actual": "18250",
+          "expected": "18250",
+          "passed": true
+        },
+        {
+          "sheet": "Summary",
+          "cell": "B4",
+          "actual": "365",
+          "expected": "365",
+          "passed": true
+        },
+        {
+          "sheet": "Summary",
+          "cell": "B5",
+          "actual": "32406",
+          "expected": "32406",
+          "passed": true
+        }
+      ],
+      "validation_method": "Restricted OOXML evaluator vs independent Decimal costing",
+      "native_excel_verified": false,
+      "full_contract_amount_verified": false
+    }
+  },
+  "code_sha256": {
+    "demo/__init__.py": "4eafa027858720f6d9b1418c405ccda8c8eee1a4e5cf1f98f7098efc062ca1fb",
+    "demo/__main__.py": "2f55f3dc1dfb12fb8e06a2a5b833b53718aa1ffebc538c19c11bbbeebed918c3",
+    "demo/costing.py": "b72c2b9b688f0ded1b9df379b123b11fd9664c86ca6638fc3b9787a5ad64b733",
+    "demo/fixtures/prices.json": "69fca7f64198209574ac0bb0205dbb5110796a1af8d3241d5925367e7465c713",
+    "demo/fixtures/request.json": "94be39634b6cc176970045742c6bf6e5e38274fa65f227111b92df79b2839a0b",
+    "demo/workbook.py": "0ba3cad78917e624340e0f2440dc039f6016fe26bf4d121daa373791d559d7b3",
+    "tests/test_demo.py": "10797dec698511d8ea564b49bb38e3b80f8d707cd5360227b47009d5f868d00a",
+    "tests/test_engine_public.py": "8d5bc30c7049f85bb0402371437df2d6328e1119d6fe6d1160e1cd70488a61b8",
+    "tools/verify_public.py": "bb20627b86e54719392d9169d57330251d2747b75e9eaa7059c258a00be7784e"
+  },
+  "native_excel_rerun_for_review": false,
+  "live_api_price_refresh_for_review": false,
+  "private_data_or_historical_reports_revalidated": false,
+  "scope": "Public synthetic demo, selected engine functions, source manifest, syntax and local link targets. No claim of complete engine execution, field approval, benefit measurement or exhaustive security audit."
 }
